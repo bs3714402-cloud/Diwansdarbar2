@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff3c3c;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3c3c;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('images/ambience.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 50px;
+}
+
+.overlay button {
+    padding: 12px 25px;
+    background: #ff3c3c;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff3c3c;
+}
+
+/* MENU */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #ff3c3c;
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact button {
+    padding: 10px 20px;
+    background: #ff3c3c;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background: #000;
+}
